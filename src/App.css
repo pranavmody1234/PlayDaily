@@ -1,38 +1,328 @@
-.App {
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+/* Header styling */
+.header {
+  background-color: #F5F5F5;
+  color: black;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.company-name{
+  font-family: "Segoe Script";
+  font-size: 22px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-content {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width: 40px; /* Adjust the size of the logo as needed */
+  height: 40px; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-container {
+  width: 400px;
+  min-height: 100%;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  box-sizing: border-box; /* Include padding in width calculation */
 }
+
+
+/* Style for the menu button */
+.menu-button {
+    background: none;
+    border: none;
+    color: Black;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px; /* Positions the button on the right within the app-container */
+    top: 10px;
+}
+
+
+.menu {
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0; /* Initially hidden */
+    display: none; /* Start with the menu hidden */
+    z-index: 100;
+}
+
+.menu.open {
+    max-height: 500px; /* Enough to show all items */
+    display: block; /* Display block when open */
+}
+
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #f1f1f1;
+}
+  /* Games section styling */
+  .theme-section {
+    padding: 5px;
+  }
+
+/* Games section styling */
+.games-section {
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center; /* Aligns the items in the center vertically */
+  justify-content: space-between; /* Adds space between items */
+}
+
+.coins-container {
+  display: flex;
+  align-items: center; /* Aligns the coins and text in the center vertically */
+  flex-shrink: 0; /* Prevents the container from shrinking */
+}
+
+.coin-icon {
+  width: 24px; /* Adjust the size of the coin icon */
+  height: 24px; /* Adjust the size of the coin icon */
+  margin-right: 5px; /* Space between the coin icon and the number */
+}
+
+.coin-value {
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px; /* Space between the sets of coins and numbers */
+}
+  
+  .current-theme {
+    background-size: cover; /* Resize the image to cover the entire element */
+    background-position: center; /* Center the image within the element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white;
+    padding: 1px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+ /* Container for game tiles */
+.games-section h3 {
+  margin-top: 0;
+}
+
+.game-tiles-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow tiles to wrap to the next line */
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+}
+
+/* Individual game tile styling */
+.game-tile {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box;
+  flex-basis: calc(50% - 10px); /* Set the width of each tile to 50% minus the margin */
+  max-width: calc(50% - 10px); /* Ensure tiles don't exceed 50% width */
+  transition: box-shadow 0.1s ease, transform 0.2s ease;
+}
+
+/* Different box shadow colors for each tile */
+.game-tile-0 {
+  box-shadow: -6px 6px 6px 0px rgba(255, 255, 0, 0.5); /* Yellow shadow */
+
+}
+
+.game-tile-1 {
+  box-shadow: -6px 6px 6px 0px rgba(255, 0, 0, 0.5); /* Red shadow */
+}
+
+.game-tile-2 {
+  box-shadow: -6px 6px 6px 0px rgba(0, 0, 255, 0.5); /* Blue shadow */
+}
+
+.game-tile-3 {
+  box-shadow: -6px 6px 6px 0px rgba(0, 255, 0, 0.5); /* Green shadow */
+
+}
+
+/* Pressing animation */
+.game-tile:active {
+  transform: scale(0.99); /* Scale down to 95% when pressed */
+  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.3); /* Reduce shadow when pressed */
+}
+
+.games-header {
+  display: flex;
+  justify-content: space-between; /* This spreads the items to each end */
+  align-items: center; /* Aligns items vertically in the center */
+  padding: 10px 20px;
+  background-color: #f8f8f8; /* Adjust the background color as needed */
+  font-family: Arial, sans-serif;
+}
+
+
+h1 {
+  font-size: 18px;
+  color: #333;
+  margin: 0; /* Removes margin to avoid unnecessary spacing */
+}
+
+
+  /* Footer styling */
+  footer {
+    background-color: #d90068;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .date-carousel-container {
+    position: relative;
+    width: 100%; /* Make sure the container takes full width */
+    max-width: 600px; /* Adjust based on your design needs */
+    margin: auto; /* Center the carousel on the page */
+    overflow: hidden; /* Hides anything outside the container bounds */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0; /* Add some vertical padding */
+
+}
+
+.date-carousel {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    padding:2px;
+    scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+}
+
+.date-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 16px; /* Adjusted font size for better visibility */
+    position: relative; /* For absolute positioning of progress ring */
+}
+
+.date-item .date-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Fixed width for the circle */
+    height: 50px; /* Fixed height for the circle */
+    border-radius: 50%; /* Full round shape */
+    background-color: #f0f0f0; /* Light gray background */
+    opacity: 0.6; /* Less focus on inactive items */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    position: relative; /* To position the progress ring */
+}
+
+.date-item.active .date-icon-container {
+    opacity: 1; /* Full visibility for active item */
+    background-color: #d4f7d4; /* Light green background for active */
+}
+
+.progress-ring {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+    transition: 0.35s stroke-dashoffset;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.carousel-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333; /* Dark grey arrows */
+    position: absolute; /* Positioning arrows on the sides */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    z-index: 2; /* Ensure arrows are above other elements */
+}
+
+.carousel-prev {
+    left: 10px; /* Position the left arrow appropriately */
+}
+
+.carousel-next {
+    right: 10px; /* Position the right arrow appropriately */
+}
+
+.carousel-nav:hover {
+    color: #000; /* Darker on hover */
+}
+
+.date-icon {
+    font-size: 24px; /* Appropriate icon size */
+}
+
+.date-text {
+    margin-top: 5px; /* Space between the circle and text */
+    font-size: 14px; /* Smaller font size for the date */
+    color: #333; /* Dark text color */
+}
+.timer{
+  text-align: center;
+}
+.newGameTime{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px; /* Adjust font size as needed */
+  color: darkgrey; /* Adjust text color as needed */
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');

@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './Header';
+import GamesSection from './GamesSection';
+import Footer from './Footer';
+import MobileMenu from './MobileMenu'; // Import the MobileMenu component
+import DateCarousel from './DateCarousel';
+import CurrentTheme from './CurrentTheme';
+import Timer from './timer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <Header />
+      <MobileMenu />
+      <CurrentTheme />
+      <DateCarousel />
+      <GamesSection />
+      <Timer />
+      <Footer />
     </div>
   );
 }
