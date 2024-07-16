@@ -13,7 +13,6 @@ function GamesSection() {
               <span className="coin-value">40</span>
           </div>
       </div>
-      <GameTile />
   </div>
   
     );

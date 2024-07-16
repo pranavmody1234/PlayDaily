@@ -24,7 +24,7 @@ function CurrentTheme() {
         <div className="theme-section">
             <p>Current theme</p>
             <div className="current-theme">
-                <img src={bannerUrl} width="100%" alt="Theme Image" />
+                <img src={'./images/bollywoodtheme.jpg'} height="130px" width="100%" alt="Theme Image" />
             </div>
         </div>
     );

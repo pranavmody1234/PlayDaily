@@ -3,13 +3,13 @@ import './App.css';  // Ensure your styles are imported
 
 const DateCarousel = () => {
   const dates = [
-    { day: 'Mon', icon: '👾', progress: 60 },
-    { day: 'Tue', icon: '🔥', progress: 75 },
-    { day: 'Wed', icon: '👟', progress: 20 },
-    { day: 'Thu', icon: '🚗', progress: 98 },
-    { day: 'Fri', icon: '🍔', progress: 45 },
-    { day: 'Sat', icon: '🎉', progress: 10 },
-    { day: 'Sun', icon: '🗳️', progress: 100 }
+    { day: 'M', icon: '👾', progress: 60 },
+    { day: 'T', icon: '🔥', progress: 75 },
+    { day: 'W', icon: '👟', progress: 20 },
+    { day: 'T', icon: '🚗', progress: 98 },
+    { day: 'F', icon: '🍔', progress: 45 },
+    { day: 'S', icon: '🎉', progress: 10 },
+    { day: 'S', icon: '🗳️', progress: 100 }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(dates.length - 1);

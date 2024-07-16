@@ -20,8 +20,9 @@ const Timer = () => {
 
   return (
     <div className="timer">
-    <p>New Games Live in:</p>
-    <p className='newGameTime'>{formatTime(timeLeft)}</p>
+    New Games Live in:<br /><br />
+    <span className='newGameTime'>{formatTime(timeLeft)}</span><br /><br />
+    Remind Me
     </div>
   );
 };

@@ -41,10 +41,9 @@ function MobileMenu() {
             <div className={`menu ${isOpen ? 'open' : ''}`} ref={menuRef}>
                 <ul>
                     <li><a href="#news">Login/Signup</a></li>
-                    <li><a href="#contact">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#about">News</a></li>
-                    <li><a href="#about">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./game">Game</a></li>
+
                 </ul>
             </div>
         </div>
