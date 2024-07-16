@@ -1,0 +1,44 @@
+{
+    "banner_url": "https://s3.ap-south-1.amazonaws.com/playdaily.gg/static-images/today.webp",
+    "date": "Jun 9",
+    "games": [
+    {
+    "banner_url": "https://s3.ap-south-1.amazonaws.com/playdaily.gg/static-images/fib.png",
+    "game_id": "FIB",
+    "title": "FIB",
+    "url": "/trivia/fib/"
+    },
+    {
+    "banner_url": "https://s3.ap-south-1.amazonaws.com/playdaily.gg/static-images/ats.png",
+    "game_id": "ATS",
+    "title": "ATS",
+    "url": "/trivia/ats/"
+    },
+    {
+    "banner_url": "https://s3.ap-south-1.amazonaws.com/playdaily.gg/static-images/it.png",
+    "game_id": "IT",
+    "title": "IT",
+    "url": "/trivia/it/"
+    },
+    {
+    "banner_url": "https://s3.ap-south-1.amazonaws.com/playdaily.gg/static-images/gti.png",
+    "game_id": "GTI",
+    "title": "GTI",
+    "url": "/trivia/gti/"
+    }
+    ],
+    "previous_games": [
+    {
+    "banner_url": "https://s3.ap-south-1.amazonaws.com/playdaily.gg/static-images/today.webp",
+    "date": "Jun 8",
+    "theme": "Bollywood Number"
+    },
+    {
+    "banner_url": "https://s3.ap-south-1.amazonaws.com/playdaily.gg/static-images/yesterday.webp",
+    "date": "Jun 7",
+    "theme": "Hollywood"
+    }
+    ],
+    "theme": "Bollywood",
+    "backup_data": false
+    }
