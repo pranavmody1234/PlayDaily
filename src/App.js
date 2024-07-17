@@ -27,7 +27,6 @@ function App() {
               <GamesSection />
               <GameTiles />
               <Timer />
-
             </>
           } />
           <Route path='/game' element={<Game />} />
