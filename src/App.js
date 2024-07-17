@@ -22,6 +22,7 @@ function App() {
         <Routes>
           <Route path='/' element={
             <>
+            
             <CurrentTheme />
               <DateCarousel />
               <GamesSection />
