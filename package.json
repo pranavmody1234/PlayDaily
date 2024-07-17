@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "homepage": "https://pranavmody1234.github.com/PlayDaily",
+=======
+  "homepage": "https://pranavmody1234.github.io/PlayDaily",
+>>>>>>> c64c7412f32d405c49670b3079b4235a85bc2b9c
   "name": "playdaily-app1",
   "version": "0.1.0",
   "private": true,

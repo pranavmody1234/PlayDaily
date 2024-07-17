@@ -16,6 +16,7 @@ import { HashRouter } from 'react-router-dom';
 function App() {
   return (
     <HashRouter>
+
       <div className="app-container">
         <Header />
 
@@ -28,6 +29,7 @@ function App() {
               <GamesSection />
               <GameTiles />
               <Timer />
+
             </>
           } />
           <Route path='/game' element={<Game />} />
