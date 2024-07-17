@@ -11,10 +11,11 @@ import Timer from './timer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Game from './TriviaGame/Game';
 import BottomNavBar from './BottomNavBar';
+import { HashRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="app-container">
         <Header />
 
@@ -34,7 +35,7 @@ function App() {
         <Footer />
         <BottomNavBar />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
